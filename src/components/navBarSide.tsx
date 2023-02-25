@@ -1,13 +1,14 @@
-import React from "react";
+import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
 import { email } from "../config";
 
-const ContactMe = () => {
+const navBarSide = () => {
   return (
-    <nav className="fixed left-0 top-0 h-full bg-slate-600 w-[5vw] text-xl text-slate-300 flex flex-col justify-center dark:bg-slate-900">
+    <div className="shadow fixed left-0 top-0 h-full bg-slate-600 w-[5vw] text-xl text-slate-300 lg:flex flex-col justify-center dark:bg-slate-900 ">
       <ul className="py-4">
         <li className="border-t border-gray-700 py-2">
           <a
-            href="/"
+            href="/#"
             className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
           >
             Home
@@ -15,23 +16,20 @@ const ContactMe = () => {
         </li>
         <li className="border-t border-b border-gray-700 py-2">
           <a
-            href="/about"
+            href="/#skill"
             className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
           >
             Skills
           </a>
         </li>
-        <li className="border-t border-b border-gray-700 py-2">
-          <a
-            href="/about"
-            className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
-          >
+        <li className="border-t text-center border-b border-gray-700 py-2 transition-colors duration-300 ease-in-out hover:text-teal-600">
+          <a href="/#experience" className="block ">
             Experience
           </a>
         </li>
         <li className="border-t border-b border-gray-700 py-2">
           <a
-            href="/about"
+            href="/#project"
             className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
           >
             Projects
@@ -39,15 +37,14 @@ const ContactMe = () => {
         </li>
         <li className="border-b border-gray-700 py-2">
           <a
-            href="/contact"
+            href="/#contactme"
             className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
           >
             Contact
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
-
-export default ContactMe;
+export default navBarSide;

@@ -1,33 +1,26 @@
 import Image from "next/image";
+import { useContext } from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import profileImage from "../../public/profile-pic.jpg";
+import darkModeContext from "./darkmodeContext";
 
 interface Props {
   darkMode: Boolean;
   setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
 }
-export default function Home(props: Props) {
-  const { darkMode, setDarkMode } = props;
-
+export default function Home() {
+  const { darkMode, setDarkMode } = useContext(darkModeContext);
   return (
-    <section className="">
-      <nav className="py-5 flex justify-between dark:text-white">
+    <section className="" id="#">
+      <nav className="py-10 flex justify-between dark:text-white">
         <h1 className="font-burtons text-xl"></h1>
         <ul className="flex items-center">
           <li>
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}
-              className=" cursor-pointer text-2xl"
+              className="cursor-pointer text-4xl"
             />
-          </li>
-          <li>
-            <a
-              className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href="#"
-            >
-              Contact
-            </a>
           </li>
         </ul>
       </nav>

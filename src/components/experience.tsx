@@ -2,12 +2,15 @@ import Image from "next/image";
 import fsLogo from "../../public/fairstone-logo.png";
 import ptwLogo from "../../public/PTW-logo.png";
 import bccLogo from "../../public/BCC-logo.png";
-
+import { useRef } from "react";
 export default function Experience() {
   return (
     <section className="py-10">
       <div>
-        <h3 className="text-2xl py-1 text-sky-400 dark:text-white">
+        <h3
+          id="experience"
+          className="text-2xl py-1 text-sky-400 dark:text-white"
+        >
           My Experiences
         </h3>
       </div>
