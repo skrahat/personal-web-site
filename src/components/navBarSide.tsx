@@ -4,7 +4,7 @@ import { email } from "../config";
 
 const navBarSide = () => {
   return (
-    <div className="shadow fixed left-0 top-0 h-full bg-slate-600 w-[10vw] text-xl text-slate-300 lg:flex flex-col justify-center dark:bg-slate-900 ">
+    <div className="shadow fixed left-0 top-0 h-full bg-slate-800 w-[5vw] text-xl text-slate-300 lg:flex flex-col justify-center dark:bg-black ">
       <ul className="py-4">
         <li className="border-t border-gray-700 py-2">
           <a
@@ -16,7 +16,7 @@ const navBarSide = () => {
         </li>
         <li className="border-t border-b border-gray-700 py-2">
           <a
-            href="/#skill"
+            href="/#skills"
             className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
           >
             Skills
