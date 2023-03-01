@@ -22,6 +22,14 @@ const navBarSide = () => {
             Skills
           </a>
         </li>
+        <li className="border-b border-gray-700 py-2">
+          <a
+            href="/#education"
+            className="block text-center transition-colors duration-300 ease-in-out hover:text-teal-600"
+          >
+            Education
+          </a>
+        </li>
         <li className="border-t text-center border-b border-gray-700 py-2 transition-colors duration-300 ease-in-out hover:text-teal-600">
           <a href="/#experience" className="block ">
             Experience

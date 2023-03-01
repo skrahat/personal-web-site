@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
         <div className={darkMode ? "dark" : ""}>
-          <Navbar />
           <Component {...pageProps} />
         </div>
       </DarkModeContext.Provider>
