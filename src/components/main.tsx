@@ -5,10 +5,6 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import profileImage from "../../public/profile-pic.jpg";
 import darkModeContext from "./darkmodeContext";
 
-interface Props {
-  darkMode: Boolean;
-  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-}
 export default function Home() {
   const { darkMode, setDarkMode } = useContext(darkModeContext);
   return (
