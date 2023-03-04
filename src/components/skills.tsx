@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import CDK from "../../public/assets/skills/cdk.png";
 import Java from "../../public/assets/skills/java.png";
 import Javascript from "../../public/assets/skills/javascript.png";
@@ -11,6 +11,17 @@ import NextJS from "../../public/assets/skills/nextjs.png";
 import AWS from "../../public/assets/skills/aws.png";
 
 const Skills = () => {
+  const [experienceYears, setExperienceYears] = useState<number>(0);
+  const [alogorithm, setAlogorithm] = useState<number>(0);
+
+  const onMouseEnter = (num: number, numTwo: number) => {
+    setExperienceYears(num);
+    setAlogorithm(numTwo);
+  };
+  const onMouseLeave = (num: number, numTwo: number) => {
+    setExperienceYears(num);
+    setAlogorithm(numTwo);
+  };
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -97,6 +108,45 @@ const Skills = () => {
               <div className="flex flex-col items-center justify-center">
                 <h3>Next</h3>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span className="text-base font-bold text-blue-700 dark:text-white">
+                Front-end
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div
+                className="bg-green-600 h-2.5 rounded-full"
+                style={{ width: 80 + "%" }}
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span className="text-base font-bold text-blue-700 dark:text-white">
+                Back-end
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div
+                className="bg-pink-600 h-2.5 rounded-full"
+                style={{ width: 85 + "%" }}
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div className="flex justify-between mb-1">
+              <span className="text-base font-bold text-blue-700 dark:text-white">
+                Algorithm Complexity
+              </span>
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div
+                className="bg-red-600 h-2.5 rounded-full"
+                style={{ width: 90 + "%" }}
+              ></div>
             </div>
           </div>
         </div>
