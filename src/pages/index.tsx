@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import Experience from "../components/experience";
 import Project from "../components/project";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import ContactMe from "../components/contactMe";
-import ARLogo from "../../public/arLogo.png";
 import Main from "../components/main";
 import NavBar from "../components/navBarSide";
 
@@ -22,8 +20,8 @@ export default function Home() {
       <main className="  px-10 pb-20 bg-slate-100 dark:bg-gray-900 md:px-20 lg:px-40">
         <Main />
         <Skills />
-        <Education />
         <Experience />
+        <Education />
         <Project />
         <ContactMe />
       </main>

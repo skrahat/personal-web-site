@@ -34,8 +34,8 @@ const navBarSide = () => {
           </a>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#education">
-            <FaGraduationCap
+          <a href="/#experience">
+            <TbOld
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
@@ -43,8 +43,8 @@ const navBarSide = () => {
           </a>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#experience">
-            <TbOld
+          <a href="/#education">
+            <FaGraduationCap
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"

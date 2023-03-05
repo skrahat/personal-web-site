@@ -58,9 +58,9 @@ export default function Project() {
     setIsHovered(false);
   };
   return (
-    <div className="w-full max-h-[840px] lg:h-screen pb-2" id="project">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-3xl pb-5 tracking-widest uppercase text-teal-600 dark:text-white">
+    <div className="w-full max-h-[1040px] lg:h-screen pb-2" id="project">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full dark:text-white">
+        <p className="text-3xl pb-5 tracking-widest uppercase text-teal-600 ">
           Projects
         </p>
         <div className="grid grid-cols-2 gap-4">

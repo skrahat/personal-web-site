@@ -10,33 +10,17 @@ import Node from "../../public/assets/skills/node.png";
 import NextJS from "../../public/assets/skills/nextjs.png";
 import AWS from "../../public/assets/skills/aws.png";
 import skillItem from "./microComponent/skillItem";
-
-function progressBar(name: string, val: number, colour: string) {
-  return (
-    <div className="p-5">
-      <div className="pb-2">
-        <span className="text-base font-bold text-blue-700 dark:text-white">
-          {name}
-        </span>
-      </div>
-      <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
-        <div
-          className={`bg-${colour}-600 h-1.5 rounded-full`}
-          style={{ width: val + "%" }}
-        ></div>
-      </div>
-    </div>
-  );
-}
+import progressBar from "./microComponent/progressBar";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full ">
         <p className="text-3xl tracking-widest uppercase text-teal-600">
           Skills
         </p>
-        <h2 className="py-4">What I Can Do</h2>
+        <h2 className="py-4 dark:text-white">What I Can Do</h2>
         <section className="grid grid-cols-2 py-5">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {skillItem("Java", Java)}
@@ -49,10 +33,23 @@ const Skills = () => {
             {skillItem("Next", NextJS)}
           </div>
           <div className="px-10 items-center justify-center">
+            {progressBar("Algorithm Complexity", 90, "red")}
             {progressBar("Front-end", 80, "green")}
             {progressBar("Back-end", 85, "pink")}
-            {progressBar("Algorithm Complexity", 90, "red")}
           </div>
+        </section>
+        <section className="dark:text-white">
+          As a skilled software engineer, I have extensive experience developing
+          and deploying projects in various languages such as TypeScript,
+          JavaScript, C++, Java, and Python. I have also designed numerous
+          models and systems while solving complex algorithm problems, and have
+          taken courses in Software Validation, Software Engineering Practice,
+          Computer Vision, Artificial Intelligence, and Applied Machine
+          Learning.
+          <br />
+          <br />
+          With my expertise in these areas, I am confident in my ability to
+          tackle any challenge and deliver high-quality solutions to clients.
         </section>
       </div>
     </div>
