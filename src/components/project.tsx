@@ -58,9 +58,9 @@ export default function Project() {
     setIsHovered(false);
   };
   return (
-    <div className="w-full max-h-[840px] lg:h-screen pb-2" id="project">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-3xl pb-5 tracking-widest uppercase text-teal-600 dark:text-white">
+    <div className="w-full max-h-[1040px] lg:h-screen pb-2" id="project">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full dark:text-white">
+        <p className="text-3xl pb-5 tracking-widest uppercase text-teal-600 ">
           Projects
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -78,28 +78,28 @@ export default function Project() {
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                The Global Healthcare Management Platform: DawaSwift Inc. [NDA]
+                The Global Healthcare Management Platform: DawaSwift Inc.
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(3)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Team Tree Web App (site)
+                Team Tree Web App
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(4)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Ride-Sharing App (git)
+                Ride-Sharing App
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(5)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Resto App: Restaurant management System (git)
+                Resto App: Restaurant management System
               </li>
             </ul>
           </div>
