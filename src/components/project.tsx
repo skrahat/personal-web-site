@@ -78,28 +78,28 @@ export default function Project() {
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                The Global Healthcare Management Platform: DawaSwift Inc. [NDA]
+                The Global Healthcare Management Platform: DawaSwift Inc.
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(3)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Team Tree Web App (site)
+                Team Tree Web App
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(4)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Ride-Sharing App (git)
+                Ride-Sharing App
               </li>
               <li
                 onMouseEnter={() => onMouseEnter(5)}
                 //onMouseLeave={onMouseLeave}
                 className="py-5 cursor-pointer hover:text-blue-500"
               >
-                Resto App: Restaurant management System (git)
+                Resto App: Restaurant management System
               </li>
             </ul>
           </div>

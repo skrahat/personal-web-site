@@ -6,7 +6,7 @@ import { TbOld } from "react-icons/tb";
 import { FaGraduationCap } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { IoMdContacts } from "react-icons/io";
-import ARLogo from "../../public/arLogo.png";
+import ARLogo from "../../public/arLogoNoBg.png";
 
 const navBarSide = () => {
   return (

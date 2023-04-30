@@ -5,20 +5,20 @@ import { motion, useScroll } from "framer-motion";
 export default function skillItem(name: string, imgSrc: StaticImageData) {
   const { scrollYProgress } = useScroll();
   return (
-    <motion.div
+    <div
       className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-gray-200"
-      initial={{ x: -200 }}
-      //animate={{ x: 0 }}
-      //transition={{ type: "inertia" }}
-      whileInView={{
-        x: 0,
-        transition: {
-          type: "spring",
-          bounce: 0.4,
-          duration: 0.8,
-        },
-      }}
-      viewport={{ once: true, amount: 0.8 }}
+      // initial={{ x: -200 }}
+      // animate={{ x: 0 }}
+      // transition={{ type: "inertia" }}
+      //   whileInView={{
+      //     x: 0,
+      //     transition: {
+      //       type: "spring",
+      //       bounce: 0.4,
+      //       duration: 0.8,
+      //     },
+      //   }}
+      //   viewport={{ once: true, amount: 0.8 }}
     >
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         <div className="m-auto">
@@ -28,6 +28,6 @@ export default function skillItem(name: string, imgSrc: StaticImageData) {
           <h3>{name}</h3>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

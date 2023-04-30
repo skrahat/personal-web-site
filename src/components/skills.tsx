@@ -22,20 +22,20 @@ const Skills = () => {
         </p>
         <h2 className="py-4 dark:text-white">What I Can Do</h2>
         <section className="grid grid-cols-2 py-5">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {skillItem("Java", Java)}
+          <div className="grid lg:grid-cols-4 gap-8">
+            {skillItem("AWS", AWS)}
             {skillItem("Ts", Ts)}
             {skillItem("Node", Node)}
             {skillItem("React", ReactImg)}
-            {skillItem("AWS", AWS)}
+            {skillItem("Java", Java)}
             {skillItem("CDK", CDK)}
             {skillItem("Github", Github)}
             {skillItem("Next", NextJS)}
           </div>
           <div className="px-10 items-center justify-center">
-            {progressBar("Algorithm Complexity", 90, "red")}
-            {progressBar("Front-end", 80, "green")}
-            {progressBar("Back-end", 85, "pink")}
+            {progressBar("Algorithm Complexity", 90, "bg-red-600")}
+            {progressBar("Front-end", 80, "bg-green-600")}
+            {progressBar("Back-end", 85, "bg-pink-600")}
           </div>
         </section>
         <section className="dark:text-white">
