@@ -1,7 +1,7 @@
-import Image from "next/image";
+//import Image from "next/image";
 import mcgillImg from "../../public/assets/education/McGill.png";
 import sfxImage from "../../public/assets/education/sfx.png";
-import Experience from "./experience";
+//import Experience from "./experience";
 import ImageItem from "./imageItem";
 
 export default function Education() {

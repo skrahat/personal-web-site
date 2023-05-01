@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React, { useState } from "react";
+//import Image from "next/image";
+//import React, { useState } from "react";
 import CDK from "../../public/assets/skills/cdk.png";
 import Java from "../../public/assets/skills/java.png";
-import Javascript from "../../public/assets/skills/javascript.png";
+//import Javascript from "../../public/assets/skills/javascript.png";
 import ReactImg from "../../public/assets/skills/react.png";
 import Ts from "../../public/assets/skills/ts.png";
 import Github from "../../public/assets/skills/github1.png";
@@ -11,7 +11,7 @@ import NextJS from "../../public/assets/skills/nextjs.png";
 import AWS from "../../public/assets/skills/aws.png";
 import skillItem from "./microComponent/skillItem";
 import progressBar from "./microComponent/progressBar";
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
 const Skills = () => {
   return (

@@ -7,6 +7,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { IoMdContacts } from "react-icons/io";
 import ARLogo from "../../public/arLogoNoBg.png";
+import Link from "next/link";
 
 const navBarSide = () => {
   return (
@@ -16,58 +17,58 @@ const navBarSide = () => {
       </div>
       <ul className="py-4">
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#">
+          <Link href="/#">
             <HiOutlineHome
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#skills">
+          <Link href="/#skills">
             <SiSkillshare
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#experience">
+          <Link href="/#experience">
             <TbOld
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#education">
+          <Link href="/#education">
             <FaGraduationCap
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#project">
+          <Link href="/#project">
             <AiOutlineFundProjectionScreen
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
         <li className="flex-grow flex justify-center items-center py-2">
-          <a href="/#contactme">
+          <Link href="/#contactme">
             <IoMdContacts
               size={30}
               className="cursor-pointer hover:animate-bounce"
               color="teal"
             />
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
