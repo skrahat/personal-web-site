@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import { AppProps } from "next/app";
-import Navbar from "../components/navBarSide";
+//import Navbar from "../components/navBarSide";
 import { useState } from "react";
 import DarkModeContext from "../components/darkmodeContext";
-import { createContext } from "react";
+//import { createContext } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [darkMode, setDarkMode] = useState(false);

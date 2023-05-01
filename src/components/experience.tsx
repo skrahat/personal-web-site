@@ -2,7 +2,7 @@ import Image from "next/image";
 import fsLogo from "../../public/fairstone-logo.png";
 import ptwLogo from "../../public/PTW-logo.png";
 import bccLogo from "../../public/BCC-logo.png";
-import { useRef } from "react";
+// import { useRef } from "react";
 export default function Experience() {
   return (
     <div className="w-full lg:h-screen p-2" id="experience">

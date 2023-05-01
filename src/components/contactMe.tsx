@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { email } from "../config";
 
 const ContactMe = () => {
