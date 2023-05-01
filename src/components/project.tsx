@@ -1,13 +1,12 @@
 import Image from "next/image";
 import OnboardingImg from "../../public/assets/projects/onboarding.png";
-import Netflix from "../../public/assets/projects/netflix.jpg";
+//import Netflix from "../../public/assets/projects/netflix.jpg";
 import DawaSwift from "../../public/assets/projects/dawaSwift.png";
 import TeamTree from "../../public/assets/projects/teamTree.png";
 import RideShare from "../../public/assets/projects/rideShare.png";
 import RestoApp from "../../public/assets/projects/restoApp.png";
 
 import { useState } from "react";
-import Link from "next/link";
 /**
  * 
  * <div className="w-full lg:h-screen p-2" id="project">
@@ -48,15 +47,15 @@ export default function Project() {
   };
 
   const [num, setNum] = useState<number>(0);
-  const [isHovering, setIsHovered] = useState(false);
+  // const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = (num: number) => {
     setNum(num);
-    setIsHovered(true);
+    //setIsHovered(true);
   };
-  const onMouseLeave = () => {
-    setNum(0);
-    setIsHovered(false);
-  };
+  // const onMouseLeave = () => {
+  //   setNum(0);
+  //   setIsHovered(false);
+  // };
   return (
     <div className="w-full max-h-[1040px] lg:h-screen pb-2" id="project">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full dark:text-white">

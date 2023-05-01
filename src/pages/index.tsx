@@ -24,6 +24,7 @@ export default function Home() {
         <Education />
         <Project />
         <ContactMe />
+        <div className="mx-auto flex justify-center">V1.0</div>
       </main>
     </div>
   );
