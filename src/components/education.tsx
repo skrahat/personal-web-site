@@ -1,5 +1,5 @@
 //import Image from "next/image";
-import mcgillImg from "../../public/assets/education/McGill.png";
+import mcgillImg from "../../public/assets/education/mcgill.png";
 import sfxImage from "../../public/assets/education/sfx.png";
 //import Experience from "./experience";
 import ImageItem from "./imageItem";
